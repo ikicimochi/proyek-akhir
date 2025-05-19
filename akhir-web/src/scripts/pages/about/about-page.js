@@ -7,9 +7,11 @@ const AboutPage = {
     return `
     <section id="about-page" class="about-container">
       <div class="about-card">
-        <h2 class="title">Tentang Aplikasi</h2>
-        <div id="about-content">
-          <p>Loading informasi...</p>
+        <div class="about-left">
+          <h2 class="title">Tentang Aplikasi</h2>
+          <div id="about-content">
+            <p>Loading informasi...</p>
+          </div>
         </div>
         <div class="about-image-wrapper">
           <img src="/images/piece.png" alt="piece" class="about-image" />
