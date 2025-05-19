@@ -1,8 +1,7 @@
 #about-page {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
-  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
@@ -12,6 +11,36 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   color: #2c3e50;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #b8b4b4;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+}
+
+#about-content {
+  flex: 1;
 }
 
 .about-container p {
@@ -26,9 +55,6 @@
   padding: 0;
   margin: 1.5rem 0;
   text-align: left;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about-container ul li {
@@ -44,12 +70,13 @@
 }
 
 .about-image-wrapper {
-  margin-top: 2.5rem;
+  flex-shrink: 0;
+  width: 300px;
+  margin-top: 0;
 }
 
 .about-image {
-  max-width: 250px;
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
@@ -59,18 +86,4 @@
 .about-image:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.about-card {
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  transition: transform 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-4px);
 }
